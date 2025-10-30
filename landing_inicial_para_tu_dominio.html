@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casiopea Training — Conectamos marcas con talento auténtico</title>
+  <meta name="description" content="Casiopea Training conecta grandes marcas con influencers auténticos y alineados con su identidad. Estrategias de colaboración que generan impacto real." />
+  <link rel="icon" href="/logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Casiopea Training — Conectamos marcas con talento auténtico" />
+  <meta property="og:description" content="Casiopea Training selecciona y evalúa perfiles de influencers para maximizar tu impacto de marketing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.casiopeasolutions.com/" />
+  <meta property="og:image" content="https://www.casiopeasolutions.com/og-image.jpg" />
+
+  <style>
+    :root{
+      --verde: #3c5c59;
+      --verde-oscuro: #2f4744;
+      --beige: #d8cbb3;
+      --blanco-roto: #f8f7f4;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--verde-oscuro);color:var(--blanco-roto);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif}
+    a{color:var(--beige);text-decoration:none}
+    header{padding:20px 0;background:var(--verde);box-shadow:var(--shadow)}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .logo img{height:60px}
+    nav a{margin-left:18px;font-weight:600}
+    .hero{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:80px 20px}
+    .hero-text{max-width:540px}
+    h1{font-size:42px;line-height:1.1;margin:0 0 14px;color:var(--beige)}
+    .lead{font-size:18px;color:var(--blanco-roto);opacity:.9;margin-bottom:24px}
+    .cta{background:var(--beige);color:var(--verde-oscuro);font-weight:700;padding:12px 22px;border-radius:999px;border:none;cursor:pointer}
+    .cta:hover{opacity:.9}
+    section{padding:60px 20px}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .card{background:var(--verde);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card h3{color:var(--beige)}
+    .card p{color:var(--blanco-roto);opacity:.9}
+    footer{background:var(--verde);padding:28px 20px;text-align:center;color:var(--blanco-roto);opacity:.8;font-size:14px}
+    form{display:grid;gap:12px}
+    input,textarea{width:100%;padding:10px;border-radius:10px;border:none;font-family:inherit}
+    input::placeholder,textarea::placeholder{color:#555}
+    textarea{resize:vertical;min-height:120px}
+    .contacto{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    @media(max-width:800px){.hero{flex-direction:column;text-align:center}.contacto{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <img src="/logo.png" alt="Logo Casiopea Training">
+      </div>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Nuestro proceso</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Conectamos marcas con talento auténtico</h1>
+        <p class="lead">En <strong>Casiopea Training</strong> ayudamos a las marcas a encontrar y evaluar a los influencers ideales para sus campañas. Analizamos su alcance, valores y comunidad, garantizando colaboraciones reales y efectivas.</p>
+        <button class="cta" onclick="document.getElementById('form-nombre').focus()">Contactar con nosotros</button>
+      </div>
+      <img src="/logo.png" alt="Casiopea Logo" style="height:220px;margin-top:20px;">
+    </section>
+
+    <section id="servicios" class="container">
+      <h2 style="color:var(--beige)">Nuestros servicios</h2>
+      <div class="features">
+        <div class="card">
+          <h3>🎯 Búsqueda de perfiles</h3>
+          <p>Identificamos influencers alineados con los valores de tu marca y el público objetivo de tu campaña. No usamos bases genéricas: analizamos cada perfil de forma personalizada.</p>
+        </div>
+        <div class="card">
+          <h3>🧭 Evaluación y filtrado</h3>
+          <p>Aplicamos una criba profesional basada en datos de engagement, autenticidad, coherencia de contenido y reputación digital.</p>
+        </div>
+        <div class="card">
+          <h3>📊 Informes ejecutivos</h3>
+          <p>Recibirás un informe completo con los finalistas y un análisis del potencial impacto de cada colaboración sobre tus objetivos de marketing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="container">
+      <h2 style="color:var(--beige)">Cómo trabajamos</h2>
+      <div class="features">
+        <div class="card"><h3>1️⃣ Reunión inicial</h3><p>Analizamos las necesidades, tipo de campaña y valores de la marca.</p></div>
+        <div class="card"><h3>2️⃣ Búsqueda estratégica</h3><p>Exploramos perfiles en distintas plataformas, aplicando criterios técnicos y humanos.</p></div>
+        <div class="card"><h3>3️⃣ Contacto y entrevistas</h3><p>Nos reunimos con los influencers preseleccionados para valorar encaje real.</p></div>
+        <div class="card"><h3>4️⃣ Informe final</h3><p>Entregamos un documento detallado con los mejores candidatos y una recomendación final.</p></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="container">
+      <h2 style="color:var(--beige)">Contacto</h2>
+      <div class="contacto">
+        <form onsubmit="handleSubmit(event)">
+          <input id="form-nombre" name="name" placeholder="Tu nombre" required />
+          <input id="form-email" name="email" type="email" placeholder="tu@email.com" required />
+          <textarea id="form-mensaje" name="message" placeholder="Cuéntanos qué necesitas" required></textarea>
+          <button class="cta" type="submit">Enviar</button>
+        </form>
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:training@casiopeasolutions.com">training@casiopeasolutions.com</a></p>
+          <p><strong>Dirección:</strong> Avenida Brasil, 6, Madrid, Comunidad de Madrid, España</p>
+          <p><strong>Horario:</strong> Lunes a viernes, 9:00 a 18:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Casiopea Training — casiopeasolutions.com
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      alert(`Gracias, ${data.name}! Te contactaremos pronto en ${data.email}.`);
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
