@@ -7,42 +7,36 @@
   <meta name="description" content="Casiopea Training conecta grandes marcas con influencers auténticos y alineados con su identidad. Estrategias de colaboración que generan impacto real." />
   <link rel="icon" href="logo.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Casiopea Training — Conectamos marcas con talento auténtico" />
-  <meta property="og:description" content="Casiopea Training selecciona y evalúa perfiles de influencers para maximizar tu impacto de marketing." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.casiopeasolutions.com/" />
-  <meta property="og:image" content="https://www.casiopeasolutions.com/og-image.jpg" />
-
   <style>
     :root{
-      --verde: #3c5c59;
-      --verde-oscuro: #2f4744;
+      --principal: #31565f;
+      --verde-suave: #3c5c59;
       --beige: #d8cbb3;
       --blanco-roto: #f8f7f4;
       --radius: 16px;
       --shadow: 0 10px 30px rgba(0,0,0,.25);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--verde-oscuro);color:var(--blanco-roto);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif}
+    html,body{margin:0;padding:0;background:var(--principal);color:var(--blanco-roto);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif}
     a{color:var(--beige);text-decoration:none}
-    header{padding:20px 0;background:var(--verde);box-shadow:var(--shadow)}
+    header{padding:20px 0;background:var(--principal);box-shadow:var(--shadow)}
     .container{max-width:1100px;margin:0 auto;padding:0 20px}
     .nav{display:flex;align-items:center;justify-content:space-between}
     .logo img{height:60px}
-    nav a{margin-left:18px;font-weight:600}
-    .hero{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:80px 20px}
+    nav a{margin-left:18px;font-weight:600;color:var(--blanco-roto)}
+    .hero{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:80px 20px;background:linear-gradient(180deg,var(--principal),var(--verde-suave))}
     .hero-text{max-width:540px}
     h1{font-size:42px;line-height:1.1;margin:0 0 14px;color:var(--beige)}
     .lead{font-size:18px;color:var(--blanco-roto);opacity:.9;margin-bottom:24px}
-    .cta{background:var(--beige);color:var(--verde-oscuro);font-weight:700;padding:12px 22px;border-radius:999px;border:none;cursor:pointer}
+    .cta{background:var(--beige);color:var(--principal);font-weight:700;padding:12px 22px;border-radius:999px;border:none;cursor:pointer}
     .cta:hover{opacity:.9}
-    section{padding:60px 20px}
+    section{padding:60px 20px;background:var(--verde-suave)}
+    h2{color:var(--beige)}
     .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-    .card{background:var(--verde);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card{background:var(--principal);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
     .card h3{color:var(--beige)}
     .card p{color:var(--blanco-roto);opacity:.9}
-    footer{background:var(--verde);padding:28px 20px;text-align:center;color:var(--blanco-roto);opacity:.8;font-size:14px}
+    footer{background:var(--principal);padding:28px 20px;text-align:center;color:var(--blanco-roto);opacity:.8;font-size:14px}
     form{display:grid;gap:12px}
     input,textarea{width:100%;padding:10px;border-radius:10px;border:none;font-family:inherit}
     input::placeholder,textarea::placeholder{color:#555}
@@ -76,7 +70,7 @@
     </section>
 
     <section id="servicios" class="container">
-      <h2 style="color:var(--beige)">Nuestros servicios</h2>
+      <h2>Nuestros servicios</h2>
       <div class="features">
         <div class="card">
           <h3>🎯 Búsqueda de perfiles</h3>
@@ -94,7 +88,7 @@
     </section>
 
     <section id="proceso" class="container">
-      <h2 style="color:var(--beige)">Cómo trabajamos</h2>
+      <h2>Cómo trabajamos</h2>
       <div class="features">
         <div class="card"><h3>1️⃣ Reunión inicial</h3><p>Analizamos las necesidades, tipo de campaña y valores de la marca.</p></div>
         <div class="card"><h3>2️⃣ Búsqueda estratégica</h3><p>Exploramos perfiles en distintas plataformas, aplicando criterios técnicos y humanos.</p></div>
@@ -103,8 +97,8 @@
       </div>
     </section>
 
-    <section id="contacto" class="container">
-      <h2 style="color:var(--beige)">Contacto</h2>
+    <section id="contacto" class="container" style="background:var(--principal)">
+      <h2>Contacto</h2>
       <div class="contacto">
         <form onsubmit="handleSubmit(event)">
           <input id="form-nombre" name="name" placeholder="Tu nombre" required />
@@ -136,4 +130,5 @@
   </script>
 </body>
 </html>
+
 
