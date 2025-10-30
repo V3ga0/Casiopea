@@ -12,44 +12,45 @@
       --principal: #31565f;
       --verde-suave: #edece5;
       --beige: #d8cbb3;
+      --titulo: #c9a66b;
       --blanco-roto: #f8f7f4;
       --radius: 16px;
-      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --shadow: 0 8px 20px rgba(0,0,0,.15);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--principal);color:var(--blanco-roto);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif}
-    a{color:var(--beige);text-decoration:none}
+    html,body{margin:0;padding:0;background:var(--principal);color:var(--principal);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif}
+    a{color:var(--titulo);text-decoration:none}
     header{padding:20px 0;background:var(--principal);box-shadow:var(--shadow)}
     .container{max-width:1100px;margin:0 auto;padding:0 20px}
     .nav{display:flex;align-items:center;justify-content:space-between}
     .logo img{height:60px}
     nav a{margin-left:18px;font-weight:600;color:var(--blanco-roto)}
-    .hero{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:80px 20px;background:linear-gradient(180deg,var(--principal),var(--verde-suave))}
-    .hero-text{max-width:540px}
-    h1{font-size:42px;line-height:1.1;margin:0 0 14px;color:var(--beige)}
-    .lead{font-size:18px;color:var(--blanco-roto);opacity:.9;margin-bottom:24px}
-    .cta{background:var(--beige);color:var(--principal);font-weight:700;padding:12px 22px;border-radius:999px;border:none;cursor:pointer}
+    .hero{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:80px 20px;background:var(--verde-suave)}
+    .hero-text{max-width:540px;color:var(--principal)}
+    h1{font-size:42px;line-height:1.1;margin:0 0 14px;color:var(--titulo)}
+    .lead{font-size:18px;color:var(--principal);opacity:.9;margin-bottom:24px}
+    .cta{background:var(--titulo);color:var(--blanco-roto);font-weight:700;padding:12px 22px;border-radius:999px;border:none;cursor:pointer}
     .cta:hover{opacity:.9}
-    section{padding:60px 20px;background:var(--verde-suave)}
-    h2{color:var(--beige)}
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-    .card{background:var(--principal);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    section{padding:40px 20px;background:var(--verde-suave)}
+    h2{color:var(--titulo);margin-bottom:10px}
+    .features{display:flex;gap:20px;flex-wrap:wrap}
+    .card{background:var(--principal);padding:24px;border-radius:var(--radius);box-shadow:var(--shadow);flex:1;min-width:300px}
     .card h3{color:var(--beige)}
-    .card p{color:var(--blanco-roto);opacity:.9}
+    .card p{color:var(--blanco-roto);opacity:.95}
     footer{background:var(--principal);padding:28px 20px;text-align:center;color:var(--blanco-roto);opacity:.8;font-size:14px}
     form{display:grid;gap:12px}
     input,textarea{width:100%;padding:10px;border-radius:10px;border:none;font-family:inherit}
     input::placeholder,textarea::placeholder{color:#555}
     textarea{resize:vertical;min-height:120px}
-    .contacto{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
-    @media(max-width:800px){.hero{flex-direction:column;text-align:center}.contacto{grid-template-columns:1fr}}
+    .contacto{display:flex;gap:40px;align-items:start;flex-wrap:wrap}
+    @media(max-width:800px){.hero{flex-direction:column;text-align:center}.features{flex-direction:column}.contacto{flex-direction:column}}
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
       <div class="logo">
-        <img src="logo.png" alt="Logo Casiopea Training">
+        <img src="logo2.png" alt="Logo Casiopea Training">
       </div>
       <nav>
         <a href="#servicios">Servicios</a>
@@ -97,7 +98,7 @@
       </div>
     </section>
 
-    <section id="contacto" class="container" style="background:var(--principal)">
+    <section id="contacto" class="container" style="background:var(--verde-suave)">
       <h2>Contacto</h2>
       <div class="contacto">
         <form onsubmit="handleSubmit(event)">
@@ -130,5 +131,6 @@
   </script>
 </body>
 </html>
+
 
 
